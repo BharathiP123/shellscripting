@@ -1,3 +1,3 @@
 #!/bin/bash
-COURSE="Devops with JoinDevops"
+export COURSE="Devops with JoinDevops"
 echo $COURSE
