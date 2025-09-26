@@ -4,7 +4,12 @@ User_id=$(id -u)
 
 if [ $User_id -ne 0 ]; then
     echo "User doesnt root previliages"
-else
-    echo "USer have root previliages"
+    exit 1
 fi
 dnf install mysql -y 
+if [ $? -ne 0 ]; then
+    echo "USer doent have root permission"
+    exit 1
+else 
+    echo "installed mysql with root prilizes"
+fi
