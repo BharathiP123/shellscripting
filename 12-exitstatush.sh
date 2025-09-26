@@ -6,4 +6,4 @@ if [$User_id -ne 0];
     echo "User doesnt root previliages"
 else
     echo "USer have root previliages"
-
+fi
