@@ -7,3 +7,4 @@ if [ $User_id -ne 0 ]; then
 else
     echo "USer have root previliages"
 fi
+dnf install mysql -y 
